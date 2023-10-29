@@ -9,14 +9,18 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  
+
     <title>Welcome to iDiscuss - Coding forums</title>
 </head>
 
 <body>
- <?php include 'partials/header.php';?>
- 
- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <?php include 'partials/header.php';?>
+    <?php include 'partials/dbconnect.php';?> 
+
+    <!-- slider starts here -->
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -24,7 +28,8 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://source.unsplash.com/1600x550/?programming language,code" class="d-block w-100" alt="...">
+                <img src="https://source.unsplash.com/1600x550/?programming language,code" class="d-block w-100"
+                    alt="...">
             </div>
             <div class="carousel-item">
                 <img src="https://source.unsplash.com/1600x550/?programmers,microsoft" class="d-block w-100" alt="...">
@@ -42,119 +47,40 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-<div class="container my-3">
-  <h2 class="text-center my-3">iDiscuss - Browse Categories</h2>
-  <div class="row">
 
-   <!-- Use a for loop to iterate through categories -->
-
-    <div class="col-md-4 my-2">
-        <div class="card" style="width: 18rem;">
-      <img src="https://source.unsplash.com/500x400/?coding,python"  class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">View Threads</a>
-      </div>
-    </div>
-    </div>
-
-    <div class="col-md-4 my-2">
-        <div class="card" style="width: 18rem;">
-      <img src="https://source.unsplash.com/500x400/?coding,python"  class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">View Threads</a>
-      </div>
-    </div>
-    </div>
-
-    <div class="col-md-4 my-2">
-        <div class="card" style="width: 18rem;">
-      <img src="https://source.unsplash.com/500x400/?coding,python"  class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">View Threads</a>
-      </div>
-    </div>
-    </div>
-
-    <div class="col-md-4 my-2">
-        <div class="card" style="width: 18rem;">
-      <img src="https://source.unsplash.com/500x400/?coding,python"  class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">View Threads</a>
-      </div>
-    </div>
-    </div>
-
-    <div class="col-md-4 my-2">
-        <div class="card" style="width: 18rem;">
-      <img src="https://source.unsplash.com/500x400/?coding,python"  class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">View Threads</a>
-      </div>
-    </div>
-    </div>
-
-    <div class="col-md-4 my-2">
-        <div class="card" style="width: 18rem;">
-      <img src="https://source.unsplash.com/500x400/?coding,python"  class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">View Threads</a>
-      </div>
-    </div>
-    </div>
-
-    <div class="col-md-4 my-2">
-        <div class="card" style="width: 18rem;">
-      <img src="https://source.unsplash.com/500x400/?coding,python"  class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">View Threads</a>
-      </div>
-    </div>
-    </div>
-
-    <div class="col-md-4 my-2">
-        <div class="card" style="width: 18rem;">
-      <img src="https://source.unsplash.com/500x400/?coding,python"  class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">View Threads</a>
-      </div>
-    </div>
-    </div>
-
-<div class="col-md-4 my-2">
-        <div class="card" style="width: 18rem;">
-      <img src="https://source.unsplash.com/500x400/?coding,python"  class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">View Threads</a>
-      </div>
-    </div>
-    </div>
+    <!-- category container starts here -->
 
 
+    <div class="container my-4">
+        <h2 class="text-center my-4">iDiscuss - Browse Categories</h2>
+        <div class="row my-4">
 
+                 <!-- Fetch all the categories  -->
+                 <!-- Use a for loop to iterate through categories -->
+               <?php  
+               $sql = "SELECT * FROM `categories` ";
+               $result = mysqli_query($conn,$sql);
+               while($row = mysqli_fetch_array($result)){
+                //  echo $row['category_id'];
+                //  echo $row['category_name'];
+                $cat = $row['category_name'];
+                $desc = $row['category_description'];
+               echo '<div class="col-md-4 my-2">
+               <div class="card" style="width: 18rem;">
+                   <img src="https://source.unsplash.com/500x400/?' . $cat . ',Coding" class="card-img-top" alt="...">
+                   <div class="card-body">
+                       <h5 class="card-title">' . $cat . '</h5>
+                       <p class="card-text">'.substr($desc,0,90).'...</p>
+                       <a href="#" class="btn btn-primary">View Threads</a>
+                   </div>
+               </div>
+           </div>';
+               }
+               ?>
+        </div>
+    </div>
 
-    
-  </div>
-</div>
- 
- <?php include 'partials/footer.php';?>
+    <?php include 'partials/footer.php';?>
 
 
     <!-- Optional JavaScript -->
